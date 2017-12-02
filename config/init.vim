@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'roxma/vim-hug-neovim-rpc'
   endif
 
+  Plug 'godlygeek/tabular'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
   Plug 'SirVer/ultisnips'
@@ -22,6 +23,7 @@ set termguicolors " Enables truecolor in neovim >= 0.1.5
 set nowrap
 set ruler
 set number
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set list
 set background=dark
 set bg=dark
@@ -32,6 +34,7 @@ set showbreak=↪
 let g:jsx_ext_required = 0
 
 " Commands
+command CreateEditorConfig cp ~/.nvim-tools/default/.editorconfig .
 command ToolsHelp !cat ~/.nvim-tools/doc/cmd.md
 command OpenConfig sp ~/.config/nvim/init.vim
 
