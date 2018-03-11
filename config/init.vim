@@ -23,7 +23,7 @@ set termguicolors " Enables truecolor in neovim >= 0.1.5
 set nowrap
 set ruler
 set number
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list
 set background=dark
 set bg=dark
